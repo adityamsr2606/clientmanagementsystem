@@ -8,11 +8,11 @@ import { DashboardHeader } from './DashboardHeader';
 const DashboardLayout = () => {
   return (
     <SidebarProvider>
-      <div className="min-h-screen flex w-full bg-background-alt">
+      <div className="min-h-screen flex w-full bg-white">
         <AppSidebar />
         <div className="flex-1 flex flex-col">
           <DashboardHeader />
-          <main className="flex-1 p-6">
+          <main className="flex-1 p-6 bg-white">
             <Outlet />
           </main>
         </div>
