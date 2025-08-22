@@ -3,48 +3,48 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Professional Customer Management System Design System */
+/* Professional Customer Management System Design System - Orange/Yellow Theme */
 
 @layer base {
   :root {
-    /* Core Brand Colors */
-    --primary: 221 83% 53%;
-    --primary-foreground: 210 40% 98%;
-    --primary-hover: 221 83% 48%;
+    /* Core Brand Colors - Orange/Yellow Theme */
+    --primary: 25 95% 53%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 25 95% 48%;
     
     /* Secondary Colors */
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 48 100% 96%;
+    --secondary-foreground: 25 25% 11%;
     
     /* Background System */
     --background: 0 0% 100%;
-    --background-alt: 220 14% 96%;
-    --foreground: 222.2 84% 4.9%;
+    --background-alt: 48 100% 97%;
+    --foreground: 25 25% 5%;
     
     /* Surface Colors */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 25 25% 5%;
     --surface: 0 0% 100%;
-    --surface-hover: 220 14% 96%;
+    --surface-hover: 48 100% 95%;
     
     /* Interactive States */
-    --muted: 210 40% 96%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --muted: 48 100% 96%;
+    --muted-foreground: 25 16% 47%;
+    --accent: 48 100% 94%;
+    --accent-foreground: 25 47% 11%;
     
     /* Status Colors */
     --success: 142 76% 36%;
     --success-foreground: 355.7 100% 97.3%;
-    --warning: 32 95% 44%;
-    --warning-foreground: 210 40% 98%;
+    --warning: 35 91% 62%;
+    --warning-foreground: 25 25% 5%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
     
     /* Border & Input */
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 221 83% 53%;
+    --border: 48 50% 88%;
+    --input: 48 50% 88%;
+    --ring: 25 95% 53%;
     
     /* Radius System */
     --radius: 0.5rem;
@@ -56,15 +56,15 @@
     --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
     --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     
-    /* Sidebar Colors */
-    --sidebar-background: 222.2 84% 4.9%;
-    --sidebar-foreground: 210 40% 98%;
-    --sidebar-primary: 221 83% 53%;
-    --sidebar-primary-foreground: 210 40% 98%;
-    --sidebar-accent: 217.2 32.6% 17.5%;
-    --sidebar-accent-foreground: 210 40% 98%;
-    --sidebar-border: 217.2 32.6% 17.5%;
-    --sidebar-ring: 221 83% 53%;
+    /* Sidebar Colors - Orange Theme */
+    --sidebar-background: 25 25% 5%;
+    --sidebar-foreground: 48 100% 98%;
+    --sidebar-primary: 25 95% 53%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 25 32% 18%;
+    --sidebar-accent-foreground: 48 100% 98%;
+    --sidebar-border: 25 32% 18%;
+    --sidebar-ring: 25 95% 53%;
   }
 }
 

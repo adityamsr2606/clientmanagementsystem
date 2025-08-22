@@ -140,33 +140,6 @@ const Dashboard = () => {
           </div>
         </CardContent>
       </div>
-
-      {/* Recent Activity */}
-      {customers.length > 0 && (
-        <div className="card-professional">
-          <CardHeader>
-            <CardTitle>Recent Activity</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-3">
-              {customers.slice(-3).reverse().map((customer) => (
-                <div key={customer.id} className="flex items-center gap-3 p-3 bg-muted/30 rounded-lg">
-                  <div className="bg-primary/10 p-2 rounded-full">
-                    <Users className="h-4 w-4 text-primary" />
-                  </div>
-                  <div className="flex-1">
-                    <p className="font-medium text-foreground">{customer.name}</p>
-                    <p className="text-sm text-muted-foreground">{customer.email}</p>
-                  </div>
-                  <div className="text-xs text-muted-foreground">
-                    {new Date(customer.createdAt).toLocaleDateString()}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </CardContent>
-        </div>
-      )}
     </div>
   );
 };
