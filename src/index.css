@@ -56,14 +56,14 @@
     --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
     --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     
-    /* Sidebar Colors - Orange Theme */
-    --sidebar-background: 25 25% 5%;
-    --sidebar-foreground: 48 100% 98%;
+    /* Sidebar Colors - Light Yellow Theme */
+    --sidebar-background: 48 100% 95%;
+    --sidebar-foreground: 25 25% 15%;
     --sidebar-primary: 25 95% 53%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 25 32% 18%;
-    --sidebar-accent-foreground: 48 100% 98%;
-    --sidebar-border: 25 32% 18%;
+    --sidebar-accent: 48 100% 88%;
+    --sidebar-accent-foreground: 25 25% 15%;
+    --sidebar-border: 48 50% 85%;
     --sidebar-ring: 25 95% 53%;
   }
 }
