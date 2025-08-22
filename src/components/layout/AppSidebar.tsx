@@ -44,13 +44,14 @@ const navigationItems = [
 ];
 
 export function AppSidebar() {
-  const { collapsed } = useSidebar();
+  const { state } = useSidebar();
   const location = useLocation();
+  const isCollapsed = state === 'collapsed';
   
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <Sidebar className={`${collapsed ? 'w-14' : 'w-64'} border-r border-sidebar-border`}>
+    <Sidebar className={`${isCollapsed ? 'w-14' : 'w-64'} border-r border-sidebar-border`}>
       <SidebarContent className="bg-sidebar text-sidebar-foreground">
         {/* Logo Section */}
         <div className="p-4 border-b border-sidebar-border">
@@ -58,7 +59,7 @@ export function AppSidebar() {
             <div className="bg-sidebar-primary text-sidebar-primary-foreground p-2 rounded-lg">
               <Users className="h-6 w-6" />
             </div>
-            {!collapsed && (
+            {!isCollapsed && (
               <div>
                 <h2 className="font-semibold text-sm">Customer MS</h2>
                 <p className="text-xs text-sidebar-foreground/70">Management System</p>
@@ -70,7 +71,7 @@ export function AppSidebar() {
         {/* Navigation */}
         <SidebarGroup>
           <SidebarGroupLabel className="px-4 py-2 text-xs font-medium text-sidebar-foreground/70 uppercase tracking-wider">
-            {!collapsed && 'Navigation'}
+            {!isCollapsed && 'Navigation'}
           </SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
@@ -84,7 +85,7 @@ export function AppSidebar() {
                       }
                     >
                       <item.icon className="h-4 w-4" />
-                      {!collapsed && <span className="ml-2">{item.title}</span>}
+                      {!isCollapsed && <span className="ml-2">{item.title}</span>}
                     </NavLink>
                   </SidebarMenuButton>
                 </SidebarMenuItem>

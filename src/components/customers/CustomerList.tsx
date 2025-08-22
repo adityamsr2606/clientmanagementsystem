@@ -90,7 +90,7 @@ const CustomerList = () => {
       {filteredCustomers.length === 0 ? (
         <Card className="text-center py-12">
           <CardContent>
-            <Users className="h-12 w-12 mx-auto text-muted-foreground mb-4" />
+            <User className="h-12 w-12 mx-auto text-muted-foreground mb-4" />
             <h3 className="text-lg font-medium mb-2">
               {customers.length === 0 ? 'No customers yet' : 'No customers found'}
             </h3>
