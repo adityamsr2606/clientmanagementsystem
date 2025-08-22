@@ -18,8 +18,8 @@ const Dashboard = () => {
       value: customers.length.toString(),
       icon: Users,
       description: 'Active customers in system',
-      color: 'text-primary',
-      bgColor: 'bg-primary/10',
+      color: 'text-gray-700',
+      bgColor: 'bg-white border-2 border-gray-200',
     },
     {
       title: 'Recent Additions',
@@ -30,16 +30,16 @@ const Dashboard = () => {
       }).length.toString(),
       icon: TrendingUp,
       description: 'Added this week',
-      color: 'text-success',
-      bgColor: 'bg-success/10',
+      color: 'text-yellow-800',
+      bgColor: 'bg-yellow-100',
     },
     {
       title: 'Active Today',
       value: customers.length.toString(),
       icon: Activity,
       description: 'Customer records available',
-      color: 'text-warning',
-      bgColor: 'bg-warning/10',
+      color: 'text-orange-800',
+      bgColor: 'bg-orange-100',
     },
   ];
 
@@ -69,14 +69,14 @@ const Dashboard = () => {
       {/* Stats Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {stats.map((stat, index) => (
-          <Card key={index} className="card-hover">
+          <Card key={index} className={`card-hover ${stat.bgColor}`}>
             <CardContent className="p-6">
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-sm font-medium text-muted-foreground">
                     {stat.title}
                   </p>
-                  <p className="text-2xl font-bold text-foreground mt-2">
+                  <p className={`text-2xl font-bold mt-2 ${stat.color}`}>
                     {stat.value}
                   </p>
                   <p className="text-xs text-muted-foreground mt-1">
